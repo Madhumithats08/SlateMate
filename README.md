@@ -1,1 +1,114 @@
 # SlateMate
+
+## 🧠 Project Overview
+
+This project was developed as part of the SlateMate AI/ML technical assignment. The objective was to analyze real-world social media metadata and classify each post as:
+
+- ✅ **Safe** — educational, motivational, or clean content  
+- ⚠️ **Neutral** — emotionally charged or uncertain content  
+- ❌ **Unsafe** — toxic, harmful, offensive, or suggestive content
+
+The system supports automated moderation by generating a labeled output and a structured summary report.
+
+---
+
+## 📂 Files Included
+
+| File Name               | Description |
+|-------------------------|-------------|
+| `SlateMate_Classifier.ipynb` | Jupyter Notebook containing full pipeline |
+| `moderated_feed.csv`    | Final dataset with classifications |
+| `report_summary.md`     | Summary report with insights and flagged examples |
+| `README.md`             | This file |
+| `social_feed_metadata.csv` | Input dataset |
+| `label_distribution.png` | Label distribution chart (optional bonus) |
+
+---
+
+## 🔧 Tools & Technologies Used
+
+- **Detoxify** (transformer-based model for toxicity detection)
+- **TextBlob** (for sentiment & emotion analysis)
+- **Pandas** and **Seaborn** (for data processing & visualization)
+- **Custom Keyword List** for detecting unsafe terms
+- **Simulated Google Vision API** (to mimic image content moderation)
+
+---
+
+## 🔍 How the Classifier Works
+
+1. **Text Cleaning & Preprocessing**
+2. **Toxicity Scoring** with Detoxify (range: 0–1)
+3. **Keyword Flagging** for terms like "kill", "hate", "nsfw"
+4. **Emotion Detection** using TextBlob polarity scores
+5. **Simulated Image Flagging** (to demonstrate multimodal moderation)
+6. **Label Assignment**:
+   - `toxicity > 0.7` or flagged → **Unsafe**
+   - `toxicity 0.3–0.7` or sad tone → **Neutral**
+   - otherwise → **Safe**
+7. **Reason Column** for moderation transparency
+
+---
+
+## 🏁 How to Run This Project
+
+### 🖥️ 1. Clone or download the repository
+```bash
+git clone https://github.com/Madhumithats08/SlateMate.git
+cd slatemate-classifier
+````
+
+### 📦 2. Install required packages
+
+Make sure you have Python 3.7+ and run:
+
+```bash
+pip install -r requirements.txt
+```
+
+If not using a `requirements.txt`, manually install:
+
+```bash
+pip install detoxify textblob pandas seaborn torch transformers
+```
+
+### ▶️ 3. Run the notebook
+
+```bash
+jupyter notebook
+```
+
+Open `SlateMate_Classifier.ipynb` and run all cells.
+
+---
+
+## 📈 Sample Output
+
+* 📄 `moderated_feed.csv` with labeled posts
+* 📝 `report_summary.md` for insights
+* 📊 Optional `label_distribution.png` chart
+
+---
+
+## 🧠 Future Enhancements
+
+* Integrate real-time image analysis using Google Vision API or YOLO
+* Support for multilingual content classification
+* Streamlit or CLI tool for live moderation demos
+
+---
+
+## ✍️ Author
+
+Madhumitha T S
+AI/ML Internship Candidate
+SlateMate AI Content Moderation Assignment
+
+---
+
+## 📅 Date
+
+15th May 2025
+
+```
+
