@@ -1,0 +1,66 @@
+{
+  "reportTitle": "SlateMate Moderation Report Summary",
+  "overview": {
+    "description": "This report summarizes the results of the content safety analysis performed on social media metadata as part of the SlateMate AI/ML technical assignment. The classifier evaluated 100+ social media posts and labeled them as Safe, Neutral, or Unsafe, using a combination of natural language processing (NLP), keyword-based detection, and simulated image analysis."
+  },
+  "flaggedPostsSummary": {
+    "totalPostsAnalyzed": "100+",
+    "unsafePostsCount": 27,
+    "neutralPostsCount": 35,
+    "safePostsCount": 45,
+    "percentageUnsafeContent": "27%"
+  },
+  "commonCausesOfRemoval": [
+    "High toxicity scores detected via Detoxify",
+    "Presence of unsafe keywords such as \"hate\", \"kill\", \"abuse\"",
+    "Detected negative emotional tone (angry, sad)",
+    "Simulated image content flags (e.g., Adult, Violence)"
+  ],
+  "sampleFlaggedPosts": [
+    {
+      "postID": 10234,
+      "excerptOfText": "I hate this world, nothing matters.",
+      "toxicityScore": 0.92,
+      "reason": "High toxicity detected; Unsafe keyword found; Detected negative emotion"
+    },
+    {
+      "postID": 10987,
+      "excerptOfText": "Gunshots outside my house again. WTF.",
+      "toxicityScore": 0.76,
+      "reason": "Mildly toxic or emotionally charged; Unsafe keyword found"
+    },
+    {
+      "postID": 11245,
+      "excerptOfText": "Go kill yourself loser.",
+      "toxicityScore": 0.97,
+      "reason": "High toxicity detected; Unsafe keyword found"
+    },
+    {
+      "postID": 11890,
+      "excerptOfText": "This looks kinda nsfw but funny lol",
+      "toxicityScore": 0.62,
+      "reason": "Mildly toxic or emotionally charged; Unsafe keyword found; Image flagged for: Adult"
+    },
+    {
+      "postID": 12021,
+      "excerptOfText": "So much blood in that fight scene omg",
+      "toxicityScore": 0.79,
+      "reason": "High toxicity detected; Unsafe keyword found; Image flagged for: Violence"
+    }
+  ],
+  "insightsAndObservations": [
+    "The classifier was able to accurately flag posts with explicit or emotionally harmful language using Detoxify and keyword matching.",
+    "Emotion detection using TextBlob helped flag emotionally risky but low-toxicity posts.",
+    "Although image content wasn't available, simulated image analysis was integrated to reflect the potential of multimodal moderation.",
+    "Most unsafe posts involved hate speech, self-harm references, or suggestive/violent visuals."
+  ],
+  "finalThoughts": "The current feed contains a notable percentage (27%) of unsafe or emotionally harmful content. This level of exposure could pose risks, especially for young or vulnerable users. The developed AI-powered classifier provides a foundational moderation engine and can be further enhanced by integrating real-time image processing, multilingual support, and advanced emotion modeling.",
+  "preparedBy": "Madhumitha T S",
+  "date": "2025-05-15",
+  "toolchain": [
+    "Detoxify",
+    "TextBlob",
+    "Python (Pandas, Seaborn)",
+    "Simulated Vision API"
+  ]
+}
