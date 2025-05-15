@@ -32,7 +32,7 @@ The system supports automated moderation by generating a labeled output and a st
 - **Pandas** and **Seaborn** (for data processing & visualization)
 - **Custom Keyword List** for detecting unsafe terms
 - **Simulated Google Vision API** (to mimic image content moderation)
-- **“Since actual image files were not available, we simulated the behavior of Google Vision API’s SafeSearch detection using random label generation. This allows the classifier to incorporate visual safety concerns such as adult or violent content in a realistic manner.”
+- “Since actual image files were not available, we simulated the behavior of Google Vision API’s SafeSearch detection using random label generation. This allows the classifier to incorporate visual safety concerns such as adult or violent content in a realistic manner.”
 
 ---
 
