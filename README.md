@@ -36,7 +36,7 @@ The system supports automated moderation by generating a labeled output and a st
 
 ---
 
-## 🔍 How the Classifier Works
+##  How the Classifier Works
 
 1. **Text Cleaning & Preprocessing**
 2. **Toxicity Scoring** with Detoxify (range: 0–1)
@@ -51,7 +51,7 @@ The system supports automated moderation by generating a labeled output and a st
 
 ---
 
-## 🏁 How to Run This Project
+##  How to Run This Project
 
 ### 🖥️ 1. Clone or download the repository
 ```bash
@@ -88,14 +88,6 @@ Open `SlateMate_Classifier.ipynb` and run all cells.
 * 📄 `moderated_feed.csv` with labeled posts
 * 📝 `report_summary.md` for insights
 * 📊 Optional `label_distribution.png` chart
-
----
-
-## 🧠 Future Enhancements
-
-* Integrate real-time image analysis using Google Vision API or YOLO
-* Support for multilingual content classification
-* Streamlit or CLI tool for live moderation demos
 
 ---
 
