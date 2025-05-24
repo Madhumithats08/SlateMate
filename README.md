@@ -21,7 +21,7 @@ The system supports automated moderation by generating a labeled output and a st
 | `report_summary.md`     | Summary report with insights and flagged examples |
 | `README.md`             | This file |
 | `social_feed_metadata.csv` | Input dataset |
-| `label_distribution.png` | Label distribution chart (optional bonus) |
+| `label_distribution.png` | Label distribution chart |
 
 ---
 
